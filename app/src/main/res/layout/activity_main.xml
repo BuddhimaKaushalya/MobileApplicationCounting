@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/Blue"
+        android:onClick="showToast"
+        android:paddingBottom="3dp"
+        android:text="@string/toast"
+        android:textColor="@color/white"
+        app:cornerRadius="0dp" />
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="match_parent"
+        android:layout_height="000dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_weight="5"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/Blue"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/Blue"
+        android:onClick="increaseScore"
+        android:paddingBottom="3dp"
+        android:text="@string/count"
+        android:textColor="@color/white"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
